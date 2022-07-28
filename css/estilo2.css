@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    }
+
+/*Barra navegação*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px ;
+    background-color: rgb(214, 238, 240);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    height: 60px;
+    line-height: 40px;
+
+   
+}
+nav h2 i{
+    margin-right: 5px;
+    font-size: 50px;
+    line-height: 10px;
+    color: #9412dc;
+}
+
+nav h2{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #acacad;
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+nav h2 span{
+    color: #919193;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    color: #5c5c5c;
+}
+nav h2 span a:visited,
+nav h2 span a:active
+{
+    color: #919193;
+}
+
+
+/*Area menu*/
+#menu ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+#menu ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    line-height: 10px;
+    padding: 10px 20px;
+    color: black;
+}
+#menu ul li .active{
+    border-bottom: #9412dc 2px solid ;
+    padding: 10px 5px;
+    color: #9412dc;
+}
+
+#menu ul li a:hover{
+    color: #9412dc;
+    font-weight: 700;
+}
+#menu #empresa a{
+    background-color: #9412dc;
+    color:azure;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+#menu #empresa a:hover{
+    background-color: #9512dc7c;
+}
+
+/*Area principal*/
+main #area-principal{
+    background: linear-gradient(black,rgb(3, 3, 47));
+    background:-webkit-linear-gradient(black,rgb(3, 3, 47)); 
+    padding-top: 100px;
+    padding-bottom: 90px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.agrupar-textos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.agrupar-textos h1{
+    width: 60%;
+    font-size: 40px;
+    margin-left: 40px;
+    padding: 20px 0px 20px 50px;
+   
+}
+.agrupar-textos p{
+    margin-left: 90px;
+}
+.contratar{
+    margin-top: 0px;
+  
+    gap: 9px;
+    display: flex;
+}
+.imagem-lateral{
+    margin-right:100px ;
+ 
+
+}
+#area-principal button{
+    width: 20%;
+    height: 30px;
+    margin-left: 90px;
+    border-radius: 5px;
+    background: #9412dc;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#area-principal button:hover{
+    background: none;
+    border: 1px solid white;
+    font-weight: 600;
+    transition: .2s;
+}
+#area-principal a:hover{
+  text-decoration: underline;
+  color: #acacad;
+}
+.patrocinadores{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+.titulo-patrocionadores{
+    text-align: center;
+    margin-top: 40px;
+    color: #9412dc;
+}
+.numeros-empresa{
+    background: linear-gradient(rgba(36, 92, 197, 0.573) ,rgba(72, 72, 138, 0.744));
+    text-align: center;
+    padding: 20px;
+}
+.numeros-empresa h2{
+   font-size: 2.5em ;
+}
+div.caixa {
+    background: white;
+    width: 20%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rebeccapurple ;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    
+ 
+}
+div.caixa span{
+    font-size: 40px;
+    color: #9412dc;
+  
+}
+div.caixa h3{
+    margin-top: 10px;
+}
+.agrupar-caixas{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+#processo-seletivo{
+    color: black;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.dividir{
+    height: 200px;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 40%;
+    font-family: "open sans" ,serif;
+    text-align: center;
+}
+
+.dividir h2{
+    color: #020302;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.dividir p{
+    color: #9412dc;
+    font-size: 20px;
+    font-family: "Open sans",serif;
+    font-weight: 700;
+}
+
+.caixa-vagas  {
+    margin-top: 300px;
+    width: 40%;
+    margin: 30px;
+    margin-top: 300px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom:-50px;
+    
+}
+.caixa-vagas img{
+    width:80%;
+}
+.caixa-vagas h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #9412dc;
+    font-family: "Open sans",serif;
+}
+.caixa-vagas h3{
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-family: "Open sans",serif;
+}
+.caixa-vagas p{
+    color: #727272;
+    font-size: 18px;
+    font-family: "Open sans",serif;
+    margin-bottom: 50px;
+}
+
+#caixaInformacoes{
+    display: flex;
+    justify-content: center;
+  
+}
+
+div.caixa2{
+    margin: 20px;
+    height: 350px;
+    width: 25%;
+    box-shadow: 5px 5px 10px #d1d1d1;
+}
+div.caixa2 h2{
+    font-family: "Open sans",serif;
+    font-size: 24px;
+    margin: 20px ;
+}
+div.caixa2 p{
+    margin: 20px ;
+    font-size: 16px;
+    color: #989898;
+}
+.rodape{
+    background: linear-gradient(black,rgb(3, 3, 47));
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    border-bottom: rgba(255, 255, 255, 0.45) 1px solid;
+ 
+}
+.rodape a{
+  color: #9512dc95;
+}
+.rodape a:hover{
+      text-decoration: underline;
+      color: #919193;
+  }
+.rodape h4{
+    font: 14px "Open Sans",serif;
+    font-weight: 700;
+    color: white;
+
+}
+.rodape div{
+    width: 24%;
+       
+}
+.logo-footer{
+    padding-left: 50px;
+}
+.logo-footer p{
+    color: white;
+    font-size: 12px;
+}
+.logo-footer img{
+    margin-bottom: 20px;
+}
+footer{
+    background: linear-gradient(black,rgb(3, 3, 47));
+    padding-left: 25px;
+    height: 50px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+}
+footer i{
+    color: white;
+    padding: 20px;
+
+}

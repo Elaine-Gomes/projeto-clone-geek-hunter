@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    }
+
+/*Barra navegação*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px ;
+    background-color: rgb(214, 238, 240);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    height: 60px;
+    line-height: 40px;
+
+   
+}
+nav h2 i{
+    margin-right: 5px;
+    font-size: 50px;
+    line-height: 10px;
+    color: #9412dc;
+}
+
+nav h2{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #acacad;
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+nav h2 span{
+    color: #919193;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    color: #5c5c5c;
+}
+nav h2 span a:visited,
+nav h2 span a:active
+{
+    color: #919193;
+}
+
+
+/*Area menu*/
+#menu ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+#menu ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    line-height: 10px;
+    padding: 10px 20px;
+    color: black;
+}
+#menu ul li .active{
+    border-bottom: #9412dc 2px solid ;
+    padding: 10px 5px;
+    color: #9412dc;
+}
+
+#menu ul li a:hover{
+ color: #9412dc;
+ font-weight: 700;
+}
+#menu #empresa a{
+    background-color: #9412dc;
+    color:azure;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+#menu #empresa a:hover{
+    background-color: #9512dc7c;
+}
+
+/*Area principal*/
+main{
+    background: linear-gradient(black,rgb(3, 3, 47));
+    background:-webkit-linear-gradient(black,rgb(3, 3, 47)); 
+    color: azure;
+    padding: 150px 20px;
+    height: 100%;
+}
+section#principal {
+    width: 40%;
+   clear: both;
+
+}
+section#principal h1{
+    margin-bottom: 40px;  
+    font-size: 1.8em;
+    padding-left: 20px;
+}
+section#principal i{
+    padding: 10px;
+}
+section#principal p{
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+#formulario{
+    padding-left: 20px;
+    display: block;
+    width: 45%;
+    padding: 20px 20px 0 20px;
+ 
+}
+#formulario span{
+    color: rgb(254, 6, 6);
+}
+#formulario .email input{
+   line-height: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: none;
+    outline: none;
+}
+.icon-email{
+    width: 40%;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgba(59, 57, 57, 0.455);
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.icon-email:hover{
+    background: none;
+}
+
+
+#formulario .email{
+    padding: 20px 0 ;
+}
+#formulario .email input:hover{
+    background: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+
+}
+
+#formulario .email button{
+    width: 40%;  
+    height: 50px;
+    border-radius: 5px;
+    background: #9412dc;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px; 
+    margin-bottom: 0px; 
+}
+.inputs{
+    display: flex;
+    align-items: center;
+   
+}
+
+#formulario .email button:hover{
+    background:none;
+    border: #9412dc solid 1px;
+}
+.botao-criarLogin{
+    margin-left: 15px;
+
+}
+#formulario i{
+    font-size: 20px;
+    padding: 10px 5px;
+    margin-left: 10px;
+ 
+}
+#formulario p{
+    font-size: 14px;
+    color: #acacad;
+}
+
+#termos{
+    margin-bottom: 10px;
+   
+}
+#termos a{
+    text-decoration: underline;
+}
+
+#formulario #termos label{
+    font-size: 16px;
+}
+section.imagem{
+    width: 100%;
+    position: absolute;
+    top:3%;
+    left: 50%;
+    padding: 0;
+    border: none;
+    display: block;
+    width: 0;
+    height: 0;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+}
+
+/*Seção de cadastro*/
+
+#cadastrar{
+    background-color: #202024;
+    display: flex;
+    justify-content: space-around;
+}
+#cadastrar{
+    color: azure;
+    padding: 50px 10px ;
+}
+.cadastrar-geek, .crie-perfil, .potencial, .receba-convites{
+    margin: 10px;
+    width: 25%;
+    padding: 20px;
+}
+.cadastrar-geek{
+    width: 20%;
+    font: 20px "open Sans", serif;
+}
+
+.crie-perfil span,
+.potencial span,
+.receba-convites span
+{
+    font: 20px "open Sans", serif; 
+    color: #9412dc;
+    padding-bottom: 20px;
+}
+#cadastrar h4{
+ padding-bottom: 20px;
+ font: 25px "Open Sans","Serif";
+}
+.roxo{
+    color: #9412dc;
+    font: 14px "Open Sans","Serif";
+    padding-bottom: 20px;
+
+}
+
+/*seção patrocinio Logos*/
+.logos{
+    background: linear-gradient(black,rgb(3, 3, 47));
+    color: white;
+    padding-bottom: 50px;
+}
+.area-imagensLogos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+.area-imagensLogos img{
+    width: 220px;
+    padding: 10px 40px;
+}
+.area-depoimento img{
+ border-radius: 80px;
+ height: 50px;
+}
+.depoimentos{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+.area-depoimento{
+    border: rgb(246, 246, 246) 1px solid;
+    border-radius: 20px;
+    width: 30%;
+    height: 400px;
+    padding: 30px;
+    background: rgba(254, 6, 6, 0.313);
+    margin: 10px;
+ 
+}
+.area-depoimento img{
+    border: rgb(21, 0, 128) 1px solid; 
+}
+.area-depoimento h2{
+    padding-bottom: 20px;
+    display: block;
+    width: 60%;
+    margin-left: 10px;
+   
+   
+}
+.area-depoimento p{
+    margin: 20px;
+    font: 18px "open Sans",serif;
+}
+.envolverImagem-texto{
+    display: flex;
+    
+}
+.envolverImagem-texto h2{
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.botao{
+    display: block;
+    position: relative;
+    left: 50%;
+    margin-top:20px ;
+    transform: translate(-50%);
+    padding: 10px 30px;
+    background: #9412dc;
+    color: white;
+    border-radius: 5px;
+}
+/*Seção custo*/
+#custo{
+    background-color: #9412dc;
+    display: flex;
+   
+}
+#custo img{
+    margin-left: 80px;
+    width: 600px;
+    height: 100%;
+}
+.agrupar{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.agrupar h2{
+    margin: 40px 25px;
+    width: 50%;
+    color: white;
+    font: 28px "Open Sans",serif;
+  
+}
+.agrupar a{
+    color: white;
+    margin: 25px;
+    padding-left: 50px;
+
+}
+.agrupar i{
+    margin-left: 10px;
+    color: #202024;
+}
+
+#valor{
+    background-color: black;
+    height: 40px;
+    width: 140px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 50px;
+    margin-left: 80px;
+
+}
+.rodape{
+    background: linear-gradient(black,rgb(3, 3, 47));
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    border-bottom: rgba(255, 255, 255, 0.45) 1px solid;
+ 
+}
+.rodape a{
+  color: #9512dc95;
+}
+.rodape a:hover{
+      text-decoration: underline;
+      color: #919193;
+  }
+.rodape h4{
+    font: 14px "Open Sans",serif;
+    font-weight: 700;
+    color: white;
+
+}
+.rodape div{
+    width: 24%;
+       
+}
+.logo-footer{
+    padding-left: 50px;
+}
+.logo-footer p{
+    color: white;
+    font-size: 12px;
+}
+.logo-footer img{
+    margin-bottom: 20px;
+}
+footer{
+    background: linear-gradient(black,rgb(3, 3, 47));
+    padding-left: 25px;
+    height: 50px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+}
+footer i{
+    color: white;
+    padding: 20px;
+
+}
